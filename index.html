@@ -11,7 +11,19 @@
     <!--Sign in and add a project "fireMessage"-->
     <!--PASTE SNIPPET HERE-->
 
-
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB5nwL7H_ag3NYSyNV4J9Xt378CEfaAi4E",
+        authDomain: "tinymessenger-d2306.firebaseapp.com",
+        databaseURL: "https://tinymessenger-d2306.firebaseio.com",
+        projectId: "tinymessenger-d2306",
+        storageBucket: "",
+        messagingSenderId: "908838806262"
+      };
+      firebase.initializeApp(config);
+    </script>
 
     <!--custom files-->
     <script src="lib/js/main.js" defer></script>
@@ -20,11 +32,10 @@
 <body>
 
     <!--Add your name-->
-    <h1>Bob's Messaging App</h1>
+    <h1>Vikas' Messaging App</h1>
 
     <!--This div will be populated with messages-->
-    <div class="allMessages">
-        
+    <div id="allMessages">
     </div>
     
     <!--For user to input messages-->
